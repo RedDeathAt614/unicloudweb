@@ -36,6 +36,8 @@ module.exports.routes = {
     view: 'static/index'
   },
 
+  'post /subscribe' : 'MailchimpController.subscribe'
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

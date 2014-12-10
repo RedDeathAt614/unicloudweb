@@ -14,27 +14,37 @@
           </div>
 
           <div class="inner">
-            <h1 class="cover-heading" style="font-weight: 800;">One place, <u>all</u> your cloud files. <br/> Designed for freelancers.</h1>
-            <p class="lead">Do you have multiple Google Drive and Dropbox accounts? Hundreds of files you share with clients?</p>
-            <p class="lead">Introducing a single interface. No more account switching, and everything stays secure where it is - on Google Drive and Dropbox.</p>
-<br>
-<ul class="list-unstyled video-list-thumbs row">
-	<li class="col-lg-4">
-		<h3>One login</h3>
-		<p>All your accounts in one place.</p>
-	</li>
-	<li class="col-lg-4">
-		<h3>Across all groups</h3>
-		<p>Get notifications from all your groups.</p>
-	</li>
-	<li class="col-lg-4">
-		<h3>Security by default</h3>
-		<p>We care about your files <3.</p>
-	</li>
-</ul>
-<br>
+            <h1 class="cover-heading" style="font-weight: 800;">One place, <u>all</u> your cloud files. <br/> Designed for freelancers + startups.</h1>
+            <p class="lead">Do you have multiple Google Drive and Dropbox accounts? And hundreds of files you share with clients?</p>
+            <br>
+            <ul class="list-unstyled video-list-thumbs row">
+            	<li class="col-lg-4">
+            		<h3>One single interface</h3>
+            		<p>Say goodbye to account switching. And files stay on Google Drive and Dropbox.</p>
+            	</li>
+            	<li class="col-lg-4">
+            		<h3>Cloud rights management</h3>
+            		<p>The easiest way to keep track of who has access to shared files.</p>
+            	</li>
+            	<li class="col-lg-4">
+            		<h3>Newsfeed and version control</h3>
+            		<p>See who edits cloud files to stay on top of developments. <3.</p>
+            	</li>
+            </ul>
+            <br>
             <p class="lead">
-              <a href="/user/new" class="btn btn-lg btn-default btn-signup">Sign up</a>
+              <% if (typeof message != 'undefined') { %>
+                <%= message %>
+              <% } else { %>
+                <form name="form" class="form-validation" action="/subscribe" method="post">
+                  <div class="list-group list-group-sm">
+                    <div class="list-group-item">
+                      <input type="email" placeholder="Get early access - enter your email here" class="form-control no-border" name="email" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-default btn-signup" >Sign up</button>
+                </form>
+              <% } %>
             </p>
           </div>
 
@@ -47,8 +57,3 @@
         </div>
       </div>
     </div>
-<script>
-mixpanel.track("Landingpage view",{
-    "version": "0.1.0"
-});
-</script>
