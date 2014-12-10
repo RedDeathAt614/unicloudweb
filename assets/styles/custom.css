@@ -37,15 +37,15 @@ span .user-circle p {
 
 /* Spinner and text in connect page*/
 .spinner{
-    position: absolute; 
-    left: 22px; 
+    position: absolute;
+    left: 22px;
     top: 19px;
 }
 
 /* icons */
 .folderIcon{
-    margin-right: 5px; 
-    width: 25px; 
+    margin-right: 5px;
+    width: 25px;
     height: 25px;
 }
 .settingIcon{
@@ -57,7 +57,7 @@ span .user-circle p {
 /* welcome page */
 html,body { height: 100%!important; margin: 0px!important; padding: 0px!important; }
 #welcome {
-  background: url('') no-repeat 50% 50% fixed; 
+  background: url('') no-repeat 50% 50% fixed;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,4 +113,12 @@ img.logo {
 
 .pull-right-intercom{
     margin-right: 50px;
+}
+
+.input-group{
+  width: 300px;
+}
+
+.form-group{
+  margin-right: 10px;
 }
