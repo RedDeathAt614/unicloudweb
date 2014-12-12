@@ -14,7 +14,7 @@ module.exports = {
 
 		var listID = "288eb7197d"; // (Betalist list)
 		MC.lists.subscribe({id: listID, email:{email:req.body.email}}, function(data) {
-			res.view('static/index',{message: "Thank you for signing up - you're the best! <br/>Please check your inbox for a confirmation e-mail."});
+			res.view('static/index',{message: "Thank you for signing up - you're the best! Please check your inbox for a confirmation e-mail."});
 		},
 		function(error) {
 			var errText = '';
