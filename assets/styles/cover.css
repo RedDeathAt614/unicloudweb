@@ -174,7 +174,7 @@ img.bg {
   width: 100%;
   height: auto;
   position: fixed;
-  top: 0;
+  top: -211px;
   left: 0;
 }
 .site-wrapper-inner {
@@ -184,7 +184,7 @@ img.bg {
 #intro {
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .cover .btn-signup {
   color: #fff !important;
