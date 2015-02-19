@@ -3,7 +3,7 @@ from fabric.api import *
 from fabric.contrib.console import confirm
 
 env.user = 'ec2-user'
-env.key_filename = '~/Documents/Projects/Mothership/Amazon/SSH keys/MichaelUnicloud.pem'
+env.key_filename = '~/Documents/Projects/Kollektiv/Amazon/SSH keys/MichaelUnicloud.pem'
 
 env.environment = "staging"
 
